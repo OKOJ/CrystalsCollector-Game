@@ -1,0 +1,20 @@
+body {
+    color: #f6f208;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 10px 0 0px 20px;
+}
+.container {
+    padding: 5px;
+}
+div {
+    float: left;
+}
+img {
+    margin: 10px 50px 10px 10px;
+}
