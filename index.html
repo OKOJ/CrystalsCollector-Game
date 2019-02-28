@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <link rel="icon" href="assets\images\icon.png" type="image/gif" sizes="16x16">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <title>Document</title>
 </head>
 
-<body background="assets\images\background.jpg">
+<body background="./assets/images/background.jpg">
     <div class="header">
         <h1>Crystal Collector</h1>
-    </div>
+    </div><br>
     <div class="container">
-        <div class="rules">
+        <div>
             <p>You will be given a random <b>Number</b> at the start of the game. <br>
                 By clicking on crystals below you will add a specific amount of points to you <b>Total Score</b>. <br>
                 To win the game match your <b>Total Score</b> with random <b>Number</b>, you lose the game if your <br>
@@ -23,24 +27,41 @@
                 Value will change each time you start a new game.
             </p>
         </div>
-
-        <div><iframe src="https://giphy.com/embed/STfDsIEgsOU3S" width="170%"  style="position:relative"
-                frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        </div><br>
         <div class="crystals">
-            <img src="./assets/images/greenCrystal.jpg" alt="green" height="150" width="150">
-            <img src="./assets/images/redCrystal.jpg" alt="red" height="150" width="150">
-            <img src="./assets/images/blueCrystal.jpg" alt="blue" height="150" width="150">
-            <img src="./assets/images/yellowCrystal.jpg" alt="yellow" height="150" width="150">
+            <img class="red" data-color="red" src="./assets/images/redCrystal.jpg" alt="red" height="140" width="140">
+            <img class="green" data-color="green" src="./assets/images/greenCrystal.jpg" alt="green" height="140" width="140">
+
+            <img class="blue" data-color="blue" src="./assets/images/blueCrystal.jpg" alt="blue" height="140" width="140">
+            <img class="yellow" data-color="yellow" src="./assets/images/yellowCrystal.jpg" alt="yellow" height="140"
+                width="140">
+        </div><br>
+        <div class="row">
+            <div class="col">
+                <p>NUMBER</p><br>
+                <p id="random-number"></p>
+            </div>
+            <div class="col">
+                <p>TOTAL SCORE</p><br>
+                <p id="total-score"></p>
+            </div>
+            <div class="col">
+                <p id="massege"></p>
+            </div>
+            <div class="col">
+                <p>WINS</p>
+                <p id="wins"></p>
+                <p>LOSSES</p>
+                <p id="losses"></p>
+            </div>
         </div>
     </div>
-    <script src="./assets/javascript/game.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>

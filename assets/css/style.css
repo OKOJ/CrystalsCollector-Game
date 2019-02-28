@@ -1,20 +1,69 @@
 body {
-    color: #f6f208;
-    font-family: 'Rubik', sans-serif;
-    padding: 10px;
-    font-size: 20px;
+
+    color: rgb(21, 255, 0);
+    /*font-family: 'Rubik', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    /*padding: 10px;*/
+    font-size: 19px;
+
 }
 
 h1 {
-    font-size: 80px;
-    margin: 10px 0 0px 20px;
+    font-size: 60px;
+    margin: 0px 0 0px 20px;
+
 }
+
 .container {
-    padding: 5px;
+    padding: 1px;
 }
+
 div {
     float: left;
+    padding: 10px;
 }
+
+p {
+    line-height: 1.4;
+}
+
+/*.crystals {
+    margin: 0px 330px 0px 0px;
+}*/
+
 img {
     margin: 10px 50px 10px 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(21, 255, 0);
+}
+
+img:active {
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+.row {
+    width: 100%;
+    
+}
+
+.col {
+    width: 18%;
+    height: 100px;
+    margin: 0px;
+}
+
+#random-number,
+#total-score {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#massege,
+#wins,
+#losses {
+    font-size: 30px;
+    font-weight: bold;
 }
