@@ -46,7 +46,7 @@ img:active {
 
 .row {
     width: 100%;
-    
+
 }
 
 .col {
@@ -66,4 +66,110 @@ img:active {
 #losses {
     font-size: 30px;
     font-weight: bold;
+}
+
+/* Large devices (desktops, 856px and up)*/
+@media only screen and (max-width: 856px) {
+    body {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
+
+
+/* Medium devices (tablets, 725px and up)*/
+@media only screen and (max-width: 725px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+
+/* Small devices (landscape phones, 630px and up)*/
+@media only screen and (max-width: 630px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    img {
+        width: 110px;
+        height: 110px;
+        margin: 10px 50px 10px 50px;
+    }
+
+    #random-number,
+    #total-score {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+
+}
+
+/* x-Small devices (landscape phones, 470x and up)*/
+@media only screen and (max-width: 470px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    img {
+        width: 85px;
+        height: 85px;
+        margin: 10px 50px 10px 50px;
+    }
+
+    #random-number,
+    #total-score {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+/* x-Small devices (landscape phones, 432x and up)*/
+@media only screen and (max-width: 435px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    img {
+        width: 75px;
+        height: 75px;
+       
+    }
+
+    #random-number,
+    #total-score {
+        font-size: 30px;
+        font-weight: bold;
+    }
 }
